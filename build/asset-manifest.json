@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9ac4481e.css",
+    "main.js": "/static/js/main.b86e7bb3.js",
+    "static/js/787.76c01a88.chunk.js": "/static/js/787.76c01a88.chunk.js",
+    "static/media/gallery.jpg": "/static/media/gallery.43d8f1330a0766b89adc.jpg",
+    "static/media/carousel-1.jpg": "/static/media/carousel-1.210f32af0edcb222d449.jpg",
+    "static/media/carousel-2.jpg": "/static/media/carousel-2.3d77e21c7c0f760d287b.jpg",
+    "static/media/gallery-3.jpg": "/static/media/gallery-3.d9b173786a4a4fc0359e.jpg",
+    "static/media/gallery-2.jpg": "/static/media/gallery-2.2fef6762ec1e4c7505cc.jpg",
+    "static/media/gallery-1.jpg": "/static/media/gallery-1.19448a56322e9b1995c0.jpg",
+    "static/media/about-1.jpg": "/static/media/about-1.e2af67ce33323c1d9ef0.jpg",
+    "static/media/gallery-6.jpg": "/static/media/gallery-6.605d11156ef50e4d0813.jpg",
+    "static/media/gallery-4.jpg": "/static/media/gallery-4.728d975614d9bb8ff5eb.jpg",
+    "static/media/story-3.jpg": "/static/media/story-3.6ef15aaa70f5410fc66a.jpg",
+    "static/media/about-2.jpg": "/static/media/about-2.8a523a6328c2cd97bd24.jpg",
+    "static/media/bridesmaid-1.jpg": "/static/media/bridesmaid-1.27f2f1b50d8d40b9a057.jpg",
+    "static/media/story-4.jpg": "/static/media/story-4.e734201a850a54b49930.jpg",
+    "static/media/event-2.jpg": "/static/media/event-2.2a035e4cbedab0f458ff.jpg",
+    "static/media/story-2.jpg": "/static/media/story-2.65e5509a370adc2ac6cd.jpg",
+    "static/media/gallery-5.jpg": "/static/media/gallery-5.46bda6744e13566fad0e.jpg",
+    "static/media/groomsmen-2.jpg": "/static/media/groomsmen-2.3af3de0bf81db078fa3d.jpg",
+    "static/media/bridesmaid-2.jpg": "/static/media/bridesmaid-2.ba02e0b65156a2cbdf7d.jpg",
+    "static/media/groomsmen-3.jpg": "/static/media/groomsmen-3.dc2185bc97f385728c7f.jpg",
+    "static/media/bridesmaid-3.jpg": "/static/media/bridesmaid-3.8ea0b627deb074aaf249.jpg",
+    "static/media/groomsmen-1.jpg": "/static/media/groomsmen-1.f4c781b5753efedb2ce7.jpg",
+    "static/media/story-1.jpg": "/static/media/story-1.17ae0c9925d7e56f3830.jpg",
+    "static/media/event-1.jpg": "/static/media/event-1.dbd4f1d68e9caf2f34c2.jpg",
+    "index.html": "/index.html",
+    "main.9ac4481e.css.map": "/static/css/main.9ac4481e.css.map",
+    "main.b86e7bb3.js.map": "/static/js/main.b86e7bb3.js.map",
+    "787.76c01a88.chunk.js.map": "/static/js/787.76c01a88.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ac4481e.css",
+    "static/js/main.b86e7bb3.js"
+  ]
+}
