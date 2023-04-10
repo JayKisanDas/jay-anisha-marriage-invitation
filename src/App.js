@@ -1,6 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useEffect, useState } from "react";
+// import React, { useState } from "react";
 import "./App.css";
+
+import $ from "jquery";
+import YoutubeButton from "./components/VideoModal/YoutubeButton";
 
 import about1 from "./assets/images/about-1.jpg";
 import about2 from "./assets/images/about-2.jpg";
@@ -28,28 +31,104 @@ import story4 from "./assets/images/story-4.jpg";
 // import VideoModal from "./components/VideoModal/VideoModal";
 
 const App = () => {
-  const [scrollPosition, setScrollPosition] = useState(0);
-
-  useEffect(() => {
-    function handleScroll() {
-      const position = window.pageYOffset;
-      setScrollPosition(position);
+  // NAVBAR ON SCROLLING
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 200) {
+      $(".navbar").fadeIn("slow").css("display", "flex");
+      $(".back-to-top").fadeIn("slow").css("display", "inline");
+    } else {
+      $(".navbar").fadeOut("slow").css("display", "none");
+      $(".back-to-top").fadeOut("slow").css("display", "none");
     }
 
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+    if ($(this).scrollTop() > 100) {
+      $(".scroll-to-bottom").fadeOut("slow");
+    } else {
+      $(".scroll-to-bottom").fadeIn("slow");
+    }
+  });
+
+  // TOGGLE MENU ON BUTTON CLICK
+  const toggleNavbarHandler = () => {
+    $("#navbarCollapse").toggleClass("show");
+  };
+
+  // SCROLL TO TOP
+  const scrollToTopHandler = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  // SCROLL TO BOTTOM
+  const scrollToBottomHandler = () => {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+  };
+
+  // // Smooth scrolling on the navbar links
+  // $(".navbar-nav a").on("click", (event) => {
+  //   if (this.hash !== "") {
+  //     event.preventDefault();
+
+  //     $("html, body").animate(
+  //       {
+  //         scrollTop: $(this.hash).offset().top - 45,
+  //       },
+  //       1500,
+  //       "easeIn"
+  //     );
+
+  //     if ($(this).parents(".navbar-nav").length) {
+  //       $(".navbar-nav .active").removeClass("active");
+  //       $(this).closest("a").addClass("active");
+  //     }
+  //   }
+  // });
+
+  // Portfolio isotope and filter
+  // var portfolioIsotope = $(".portfolio-container").isotope({
+  //   itemSelector: ".portfolio-item",
+  //   layoutMode: "fitRows",
+  // });
+  // $("#portfolio-flters li").on("click", function () {
+  //   $("#portfolio-flters li").removeClass("active");
+  //   $(this).addClass("active");
+
+  //   portfolioIsotope.isotope({ filter: $(this).data("filter") });
+  // });
+
+  // // Gallery carousel
+  // $(".gallery-carousel").owlCarousel({
+  //   autoplay: false,
+  //   smartSpeed: 1500,
+  //   dots: false,
+  //   loop: true,
+  //   nav: true,
+  //   navText: [
+  //     '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+  //     '<i class="fa fa-angle-right" aria-hidden="true"></i>',
+  //   ],
+  //   responsive: {
+  //     0: {
+  //       items: 1,
+  //     },
+  //     576: {
+  //       items: 2,
+  //     },
+  //     768: {
+  //       items: 3,
+  //     },
+  //     992: {
+  //       items: 4,
+  //     },
+  //     1200: {
+  //       items: 5,
+  //     },
+  //   },
+  // });
 
   return (
     <div>
       {/* Navbar Start */}
-      <nav
-        className={`navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5 ${
-          scrollPosition > 200 ? "fadeIn" : "fadeOut"
-        }`}
-      >
+      <nav className="navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
         <a href="index.html" className="navbar-brand d-block d-lg-none">
           <h1 className="font-secondary text-white mb-n2">
             Jay <span className="text-primary">&</span> Anisha
@@ -58,8 +137,7 @@ const App = () => {
         <button
           type="button"
           className="navbar-toggler"
-          data-toggle="collapse"
-          data-target="#navbarCollapse"
+          onClick={toggleNavbarHandler}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -135,15 +213,7 @@ const App = () => {
                       We're getting married
                     </h3>
                   </div>
-                  <button
-                    type="button"
-                    className="btn-play mx-auto"
-                    data-toggle="modal"
-                    data-src="https://www.youtube.com/embed/DWRcNpR6Kdc"
-                    data-target="#videoModal"
-                  >
-                    <span></span>
-                  </button>
+                  <YoutubeButton />
                 </div>
               </div>
             </div>
@@ -170,15 +240,7 @@ const App = () => {
                       We're getting married
                     </h3>
                   </div>
-                  <button
-                    type="button"
-                    className="btn-play mx-auto"
-                    data-toggle="modal"
-                    data-src="https://www.youtube.com/embed/DWRcNpR6Kdc"
-                    data-target="#videoModal"
-                  >
-                    <span></span>
-                  </button>
+                  <YoutubeButton />
                 </div>
               </div>
             </div>
@@ -869,15 +931,18 @@ const App = () => {
       {/* Footer End */}
 
       {/* Scroll to Bottom */}
-      <i className="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+      <i
+        onClick={scrollToBottomHandler}
+        className="fa fa-2x fa-angle-down text-white scroll-to-bottom"
+      ></i>
 
       {/* Back to Top */}
-      <a
-        href="#"
+      <button
         className="btn btn-lg btn-outline-primary btn-lg-square back-to-top"
+        onClick={scrollToTopHandler}
       >
         <i className="fa fa-angle-double-up"></i>
-      </a>
+      </button>
     </div>
   );
 };
