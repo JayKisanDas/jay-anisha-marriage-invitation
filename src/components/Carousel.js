@@ -3,20 +3,20 @@ import { useState } from "react";
 
 import YoutubeModal from "./YoutubeModal";
 import carousel1 from "../assets/images/carousel-1.jpg";
-import carousel2 from "../assets/images/carousel-2.jpg";
+// import carousel2 from "../assets/images/carousel-2.jpg";
 
 const Carousel = () => {
-  const [defaultImg, setDefaultImg] = useState(carousel1);
+  // const [defaultImg, setDefaultImg] = useState(carousel1);
 
-  const carouselControlHandler = () => {
-    defaultImg === carousel1
-      ? setDefaultImg(carousel2)
-      : setDefaultImg(carousel1);
-  };
+  // const carouselControlHandler = () => {
+  //   defaultImg === carousel1
+  //     ? setDefaultImg(carousel2)
+  //     : setDefaultImg(carousel1);
+  // };
 
-  setTimeout(() => {
-    carouselControlHandler();
-  }, 5000);
+  // setTimeout(() => {
+  //   carouselControlHandler();
+  // }, 5000);
 
   return (
     <div className="container-fluid p-0 mb-5 pb-5" id="home">
@@ -28,7 +28,8 @@ const Carousel = () => {
           >
             <img
               className="position-absolute w-100 h-100"
-              src={defaultImg}
+              // src={defaultImg}
+              src={carousel1}
               alt="carousel-1.jpg"
               style={{ objectFit: "cover" }}
             />
@@ -50,7 +51,7 @@ const Carousel = () => {
             </div>
           </div>
         </div>
-        <a
+        {/* <a
           className="carousel-control-prev justify-content-start"
           href="#"
           data-slide="prev"
@@ -75,7 +76,7 @@ const Carousel = () => {
           >
             <span className="carousel-control-next-icon mt-3"></span>
           </div>
-        </a>
+        </a> */}
       </div>
     </div>
   );
