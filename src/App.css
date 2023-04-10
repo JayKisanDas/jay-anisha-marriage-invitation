@@ -6065,6 +6065,10 @@ a.badge-dark.focus {
   transition: transform 0.6s ease-in-out;
 }
 
+.carousel-item img {
+  object-position: top;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
     transition: none;
@@ -9762,30 +9766,6 @@ a.text-dark:focus {
   z-index: 1;
 }
 
-.section-title {
-  margin-bottom: 30px;
-}
-
-.section-title::before {
-  position: absolute;
-  content: "";
-  width: 60px;
-  height: 2px;
-  bottom: 11px;
-  left: calc(50% - 80px);
-  background: #e47a2e;
-}
-
-.section-title::after {
-  position: absolute;
-  content: "";
-  width: 60px;
-  height: 2px;
-  bottom: 11px;
-  right: calc(50% - 80px);
-  background: #e47a2e;
-}
-
 .btn-play {
   position: relative;
   margin-top: 50px;
@@ -9954,6 +9934,10 @@ a.text-dark:focus {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(./assets/images/gallery.jpg), no-repeat center center;
   background-size: cover;
+}
+
+.owl-carousel {
+  display: block !important;
 }
 
 .gallery-carousel .owl-nav {
