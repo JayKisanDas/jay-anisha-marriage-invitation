@@ -21,3 +21,70 @@
   right: calc(50% - 80px);
   background: #e47a2e;
 }
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  transition: 0.5s;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.2);
+}
+
+.gallery-item button {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ffffff;
+  text-decoration: none;
+  transition: 0.5s;
+  opacity: 0;
+  background: transparent;
+}
+
+.gallery-item:hover button {
+  opacity: 1;
+}
+
+.bg-gallery {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/images/gallery.jpg), no-repeat center center;
+  background-size: cover;
+}
+
+.owl-carousel {
+  display: block !important;
+}
+
+.gallery-carousel .owl-nav {
+  position: absolute;
+  width: 135px;
+  height: 60px;
+  top: -90px;
+  left: calc(50% - 67px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.gallery-carousel .owl-nav .owl-prev,
+.gallery-carousel .owl-nav .owl-next {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e47a2e;
+  background: #ffffff;
+  font-size: 30px;
+}

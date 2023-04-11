@@ -1,6 +1,8 @@
 import $ from "jquery";
 import { Link } from "react-scroll";
 
+import "./Navbar.css";
+
 const Navbar = () => {
   // TOGGLE MENU ON BUTTON CLICK
   const toggleNavbarHandler = () => {

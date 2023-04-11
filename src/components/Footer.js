@@ -1,5 +1,23 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 const Footer = () => {
+  const socialLinks = [
+    {
+      link: "https://twitter.com/JayRomeojay67",
+      icon: "fab fa-twitter",
+    },
+    {
+      link: "https://www.instagram.com/the_avtar_jay/",
+      icon: "fab fa-facebook-f",
+    },
+    {
+      link: "https://www.instagram.com/the_avtar_jay/",
+      icon: "fab fa-linkedin-in",
+    },
+    {
+      link: "https://www.instagram.com/the_avtar_jay/",
+      icon: "fab fa-instagram",
+    },
+  ];
+
   return (
     <div
       className="container-fluid bg-dark text-white py-5"
@@ -12,34 +30,17 @@ const Footer = () => {
           <i className="far fa-heart text-white"></i>
         </div>
         <div className="d-flex justify-content-center mb-4">
-          <a
-            className="btn btn-lg btn-outline-light btn-lg-square mr-2"
-            href="https://twitter.com/JayRomeojay67"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i className="fab fa-twitter"></i>
-          </a>
-          <a
-            className="btn btn-lg btn-outline-light btn-lg-square mr-2"
-            href="#"
-          >
-            <i className="fab fa-facebook-f"></i>
-          </a>
-          <a
-            className="btn btn-lg btn-outline-light btn-lg-square mr-2"
-            href="#"
-          >
-            <i className="fab fa-linkedin-in"></i>
-          </a>
-          <a
-            className="btn btn-lg btn-outline-light btn-lg-square"
-            href="https://www.instagram.com/the_avtar_jay/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i className="fab fa-instagram"></i>
-          </a>
+          {socialLinks.map((item) => (
+            <a
+              className="btn btn-lg btn-outline-light btn-lg-square mr-2"
+              href={item.link}
+              target="_blank"
+              rel="noreferrer"
+              key={item.icon}
+            >
+              <i className={item.icon}></i>
+            </a>
+          ))}
         </div>
         <div className="d-flex justify-content-center py-2">
           <p className="text-white">
@@ -59,9 +60,14 @@ const Footer = () => {
         </div>
         <p className="m-0">
           &copy;{" "}
-          {/* <a className="text-primary" href="#">
-            Domain Name
-          </a> */}
+          <a
+            className="text-primary"
+            href="https://www.instagram.com/the_avtar_jay/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Jay Kisan Das
+          </a>
           . Designed by
           <a
             className="text-primary"
@@ -69,6 +75,7 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
+            {" "}
             Jay Kisan Das
           </a>
         </p>

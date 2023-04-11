@@ -1,0 +1,39 @@
+.timeline .row {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .timeline::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+    background: #e47a2e;
+  }
+  .timeline .row::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    background: #ffffff;
+    border: 2px solid #e47a2e;
+    transform: rotate(45deg);
+    z-index: 1;
+  }
+  .timeline .row::after {
+    content: "\f004";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 8px);
+    color: #e47a2e;
+    z-index: 2;
+  }
+}

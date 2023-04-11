@@ -20,13 +20,11 @@
 }
 
 .modal-dialog {
-  /* position: relative;
-  width: auto;
-  margin: 0.5rem; */
-  position: absolute;
+  max-width: 800px;
   width: 92%;
-  margin: auto;
   pointer-events: none;
+  position: relative;
+  margin: 60px auto 0 auto;
 }
 
 .modal.fade .modal-dialog {
@@ -208,13 +206,14 @@
 }
 
 .close {
-  /* float: right; */
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1;
   color: #000;
   text-shadow: 0 1px 0 #fff;
   opacity: 0.5;
+  width: 30px;
+  height: 30px;
 }
 
 @media (max-width: 1200px) {
@@ -241,4 +240,71 @@ button.close {
 
 a.close.disabled {
   pointer-events: none;
+}
+
+.btn-play {
+  position: relative;
+  margin-top: 50px;
+  display: block;
+  box-sizing: content-box;
+  width: 16px;
+  height: 26px;
+  border-radius: 100%;
+  border: none;
+  outline: none !important;
+  padding: 18px 20px 20px 28px;
+  background: #ffffff;
+}
+
+.btn-play:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: #ffffff;
+  border-radius: 100%;
+  animation: pulse-border 1500ms ease-out infinite;
+}
+
+.btn-play:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: #ffffff;
+  border-radius: 100%;
+  transition: all 200ms;
+}
+
+.btn-play span {
+  display: block;
+  position: relative;
+  z-index: 3;
+  width: 0;
+  height: 0;
+  left: -1px;
+  border-left: 16px solid #e47a2e;
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+}
+
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(2);
+    opacity: 0;
+  }
 }

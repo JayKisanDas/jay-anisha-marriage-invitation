@@ -1,9 +1,9 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import YoutubeModal from "./YoutubeModal";
 import carousel1 from "../assets/images/carousel-1.jpg";
 import carousel2 from "../assets/images/carousel-2.jpg";
+import "./Carousel.css";
 
 const Carousel = () => {
   const [defaultImg, setDefaultImg] = useState(carousel1);
@@ -14,9 +14,12 @@ const Carousel = () => {
       : setDefaultImg(carousel1);
   };
 
-  setTimeout(() => {
-    carouselControlHandler();
-  }, 5000);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      carouselControlHandler();
+    }, 5000);
+    return () => clearInterval(interval);
+  });
 
   return (
     <div className="container-fluid p-0 mb-5 pb-5" id="home">
@@ -50,10 +53,8 @@ const Carousel = () => {
             </div>
           </div>
         </div>
-        <a
+        <button
           className="carousel-control-prev justify-content-start"
-          href="#"
-          data-slide="prev"
           onClick={carouselControlHandler}
         >
           <div
@@ -62,11 +63,9 @@ const Carousel = () => {
           >
             <span className="carousel-control-prev-icon mt-3"></span>
           </div>
-        </a>
-        <a
+        </button>
+        <button
           className="carousel-control-next justify-content-end"
-          href="#"
-          data-slide="next"
           onClick={carouselControlHandler}
         >
           <div
@@ -75,7 +74,7 @@ const Carousel = () => {
           >
             <span className="carousel-control-next-icon mt-3"></span>
           </div>
-        </a>
+        </button>
       </div>
     </div>
   );

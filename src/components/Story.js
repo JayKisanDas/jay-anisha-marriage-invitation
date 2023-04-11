@@ -1,3 +1,5 @@
+import "./Story.css";
+
 import story1 from "../assets/images/story-1.jpg";
 import story2 from "../assets/images/story-2.jpg";
 import story3 from "../assets/images/story-3.jpg";
@@ -25,7 +27,7 @@ const Story = () => {
             <div className="col-md-6 text-center text-md-left">
               <div className="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
                 <h4 className="mb-2">First Meet</h4>
-                <p className="text-uppercase mb-2">01 Jan 2050</p>
+                <p className="text-uppercase mb-2">04 Sep 2011</p>
                 <p className="m-0">
                   Lorem elitr magna stet rebum dolores sed. Est stet labore est
                   lorem lorem at amet sea, eos tempor rebum, labore amet ipsum
@@ -39,7 +41,7 @@ const Story = () => {
             <div className="col-md-6 text-center text-md-right">
               <div className="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
                 <h4 className="mb-2">First Date</h4>
-                <p className="text-uppercase mb-2">01 Jan 2050</p>
+                <p className="text-uppercase mb-2">04 Sep 2011</p>
                 <p className="m-0">
                   Lorem elitr magna stet rebum dolores sed. Est stet labore est
                   lorem lorem at amet sea, eos tempor rebum, labore amet ipsum
@@ -59,7 +61,7 @@ const Story = () => {
             <div className="col-md-6 text-center text-md-left">
               <div className="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
                 <h4 className="mb-2">Proposal</h4>
-                <p className="text-uppercase mb-2">01 Jan 2050</p>
+                <p className="text-uppercase mb-2">04 Sep 2011</p>
                 <p className="m-0">
                   Lorem elitr magna stet rebum dolores sed. Est stet labore est
                   lorem lorem at amet sea, eos tempor rebum, labore amet ipsum
@@ -72,8 +74,8 @@ const Story = () => {
           <div className="row">
             <div className="col-md-6 text-center text-md-right">
               <div className="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
-                <h4 className="mb-2">Enagagement</h4>
-                <p className="text-uppercase mb-2">01 Jan 2050</p>
+                <h4 className="mb-2">Engagement</h4>
+                <p className="text-uppercase mb-2">04 Dec 2022</p>
                 <p className="m-0">
                   Lorem elitr magna stet rebum dolores sed. Est stet labore est
                   lorem lorem at amet sea, eos tempor rebum, labore amet ipsum

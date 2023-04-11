@@ -1,4 +1,40 @@
+import { useState } from "react";
+
 const Rsvp = () => {
+  const [selectedOption, setSelectedOption] = useState("");
+
+  const options = [
+    {
+      id: 1,
+      label: "All Events",
+      value: "all",
+    },
+    {
+      id: 2,
+      label: "Sangeet Party",
+      value: "sangeet",
+    },
+    {
+      id: 3,
+      label: "Mehendi Party",
+      value: "mehendi",
+    },
+    {
+      id: 4,
+      label: "Haldi Party",
+      value: "haldi",
+    },
+    {
+      id: 5,
+      label: "Wedding Party",
+      value: "weeding",
+    },
+  ];
+
+  const onChangeHandler = (event) => {
+    setSelectedOption(event.target.value);
+  };
+
   return (
     <div className="container-fluid py-5" id="rsvp">
       <div className="container py-5">
@@ -47,12 +83,18 @@ const Rsvp = () => {
                   </div>
                   <div className="form-group col-sm-6">
                     <select
+                      value={selectedOption}
                       className="form-control bg-secondary border-0"
-                      style={{ height: "52px" }}
+                      onChange={onChangeHandler}
                     >
-                      <option>I'm Attending</option>
-                      <option>All Events</option>
-                      <option>Wedding Party</option>
+                      <option value="" disabled>
+                        I'm Attending
+                      </option>
+                      {options.map((option) => (
+                        <option key={option.id} value={option.value}>
+                          {option.label}
+                        </option>
+                      ))}
                     </select>
                   </div>
                 </div>

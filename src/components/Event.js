@@ -18,9 +18,18 @@ const Event = () => {
         <div className="row justify-content-center">
           <div className="col-md-6 text-center">
             <h5 className="font-weight-normal text-muted mb-3 pb-3">
-              Clita ipsum aliquyam dolor diam dolores elitr nonumy. Rebum sea
-              vero ipsum eirmod tempor kasd. Diam amet lorem erat eos sit lorem
-              elitr justo
+              We are pleased to invite you to our wedding event. It is a great
+              honor for us to have you join us on this special day to celebrate
+              our love.
+            </h5>
+            <h5 className="font-weight-normal text-muted mb-3 pb-3">
+              We kindly request that you fill the RSVP form by{" "}
+              <strong>01 Nov 2023</strong> so that we can finalize the guest
+              list and ensure that all arrangements are made accordingly.
+            </h5>
+            <h5 className="font-weight-normal text-muted mb-3 pb-3">
+              We are thrilled to have you join us on this joyous occasion, and
+              we look forward to creating our unforgettable memories together.
             </h5>
           </div>
         </div>

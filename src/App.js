@@ -36,7 +36,10 @@ const App = () => {
 
   // SCROLL TO BOTTOM
   const scrollToBottomHandler = () => {
-    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+    // window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+    document
+      .getElementById("about")
+      .scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
   return (
