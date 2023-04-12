@@ -63,7 +63,7 @@ const FriendsAndFamily = () => {
                   </a>
                   <a
                     className="mx-2"
-                    href="https://twitter.com/JayRomeojay67"
+                    href="https://www.linkedin.com/in/jay-das-675046131/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -106,7 +106,7 @@ const FriendsAndFamily = () => {
                   </a>
                   <a
                     className="mx-2"
-                    href="https://twitter.com/JayRomeojay67"
+                    href="https://www.linkedin.com/in/jay-das-675046131/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -149,7 +149,7 @@ const FriendsAndFamily = () => {
                   </a>
                   <a
                     className="mx-2"
-                    href="https://twitter.com/JayRomeojay67"
+                    href="https://www.linkedin.com/in/jay-das-675046131/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -192,7 +192,7 @@ const FriendsAndFamily = () => {
                   </a>
                   <a
                     className="mx-2"
-                    href="https://twitter.com/JayRomeojay67"
+                    href="https://www.linkedin.com/in/jay-das-675046131/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -235,7 +235,7 @@ const FriendsAndFamily = () => {
                   </a>
                   <a
                     className="mx-2"
-                    href="https://twitter.com/JayRomeojay67"
+                    href="https://www.linkedin.com/in/jay-das-675046131/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -278,7 +278,7 @@ const FriendsAndFamily = () => {
                   </a>
                   <a
                     className="mx-2"
-                    href="https://twitter.com/JayRomeojay67"
+                    href="https://www.linkedin.com/in/jay-das-675046131/"
                     target="_blank"
                     rel="noreferrer"
                   >

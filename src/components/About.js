@@ -1,3 +1,5 @@
+import "./About.css";
+
 import about1 from "../assets/images/about-1.jpg";
 import about2 from "../assets/images/about-2.jpg";
 
@@ -47,7 +49,7 @@ const About = () => {
                 </a>
                 <a
                   className="btn btn-outline-primary btn-square mr-1"
-                  href="https://twitter.com/JayRomeojay67"
+                  href="https://www.linkedin.com/in/jay-das-675046131/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -113,7 +115,7 @@ const About = () => {
                 </a>
                 <a
                   className="btn btn-outline-primary btn-square mr-1"
-                  href="https://twitter.com/JayRomeojay67"
+                  href="https://www.linkedin.com/in/jay-das-675046131/"
                   target="_blank"
                   rel="noreferrer"
                 >

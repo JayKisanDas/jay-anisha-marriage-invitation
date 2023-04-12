@@ -9,7 +9,7 @@ const Footer = () => {
       icon: "fab fa-facebook-f",
     },
     {
-      link: "https://www.instagram.com/the_avtar_jay/",
+      link: "https://www.linkedin.com/in/jay-das-675046131/",
       icon: "fab fa-linkedin-in",
     },
     {
@@ -76,7 +76,7 @@ const Footer = () => {
             rel="noreferrer"
           >
             {" "}
-            Jay Kisan Das
+            Jay Das
           </a>
         </p>
       </div>

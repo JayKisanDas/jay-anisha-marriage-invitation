@@ -1,27 +1,3 @@
-.section-title {
-  margin-bottom: 30px;
-}
-
-.section-title::before {
-  position: absolute;
-  content: "";
-  width: 60px;
-  height: 2px;
-  bottom: 11px;
-  left: calc(50% - 80px);
-  background: #e47a2e;
-}
-
-.section-title::after {
-  position: absolute;
-  content: "";
-  width: 60px;
-  height: 2px;
-  bottom: 11px;
-  right: calc(50% - 80px);
-  background: #e47a2e;
-}
-
 .gallery-item {
   position: relative;
   overflow: hidden;
