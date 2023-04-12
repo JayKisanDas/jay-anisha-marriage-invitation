@@ -1,7 +1,10 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
+import db from "../Firebase.js";
 
 const Rsvp = () => {
   const [selectedOption, setSelectedOption] = useState("");
+  const [formData, setFormData] = useState({});
 
   const options = [
     {
@@ -33,6 +36,29 @@ const Rsvp = () => {
 
   const onChangeHandler = (event) => {
     setSelectedOption(event.target.value);
+    setFormData({
+      ...formData,
+      [event.target.name]: event.target.value,
+    });
+  };
+
+  const handleChange = (event) => {
+    setFormData({
+      ...formData,
+      [event.target.name]: event.target.value,
+    });
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    db.collection("posts").add({
+      attendingEvent: formData.attendingEvent,
+      emailId: formData.emailId,
+      firstName: formData.firstName,
+      guestNumber: formData.guestNumber,
+      message: formData.message,
+      timestamp: new Date().getTime(),
+    });
   };
 
   return (
@@ -51,13 +77,16 @@ const Rsvp = () => {
         <div className="row justify-content-center">
           <div className="col-lg-8">
             <div className="text-center">
-              <form>
+              <form onSubmit={handleSubmit}>
                 <div className="form-row">
                   <div className="form-group col-sm-6">
                     <input
                       type="text"
                       className="form-control bg-secondary border-0 py-4 px-3"
                       placeholder="Your Name"
+                      name="firstName"
+                      id="firstName"
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="form-group col-sm-6">
@@ -65,6 +94,9 @@ const Rsvp = () => {
                       type="email"
                       className="form-control bg-secondary border-0 py-4 px-3"
                       placeholder="Your Email"
+                      name="emailId"
+                      id="emailId"
+                      onChange={handleChange}
                     />
                   </div>
                 </div>
@@ -73,6 +105,9 @@ const Rsvp = () => {
                     <select
                       className="form-control bg-secondary border-0"
                       style={{ height: "52px" }}
+                      onChange={handleChange}
+                      name="guestNumber"
+                      id="guestNumber"
                     >
                       <option>Number of Guest</option>
                       <option>1</option>
@@ -86,6 +121,8 @@ const Rsvp = () => {
                       value={selectedOption}
                       className="form-control bg-secondary border-0"
                       onChange={onChangeHandler}
+                      name="attendingEvent"
+                      id="attendingEvent"
                     >
                       <option value="" disabled>
                         I'm Attending
@@ -104,6 +141,9 @@ const Rsvp = () => {
                     rows="5"
                     placeholder="Message"
                     required="required"
+                    name="message"
+                    id="message"
+                    onChange={handleChange}
                   ></textarea>
                 </div>
                 <div>
