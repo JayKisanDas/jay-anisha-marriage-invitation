@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import db from "../Firebase.js";
 
@@ -51,6 +51,7 @@ const Rsvp = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    console.log(formData);
     db.collection("posts").add({
       attendingEvent: formData.attendingEvent,
       emailId: formData.emailId,
