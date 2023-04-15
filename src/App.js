@@ -1,3 +1,5 @@
+import React, { useState, useEffect } from "react";
+
 import "./App.css";
 
 import $ from "jquery";
@@ -8,10 +10,28 @@ import About from "./components/About";
 import Story from "./components/Story";
 import Event from "./components/Event";
 import FriendsAndFamily from "./components/FriendsAndFamily";
-import Rsvp from "./components/Rsvp";
+import Rsvp from "./components//InvitationForm/Rsvp";
 import Footer from "./components/Footer";
 
+import backgroundMusic from "./assets/audio/tenu-leke.mp3";
+
 const App = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [audio, setAudio] = useState(null);
+
+  useEffect(() => {
+    setAudio(new Audio(backgroundMusic));
+  }, []);
+
+  const handleButtonClick = () => {
+    if (isPlaying) {
+      audio.pause();
+    } else {
+      audio.play();
+    }
+    setIsPlaying(!isPlaying);
+  };
+
   // NAVBAR ON SCROLLING
   $(window).scroll(function () {
     if ($(this).scrollTop() > 200) {
@@ -34,9 +54,8 @@ const App = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  // SCROLL TO BOTTOM
+  // SCROLL TO ABOUT SECTION
   const scrollToBottomHandler = () => {
-    // window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
     document
       .getElementById("about")
       .scrollIntoView({ behavior: "smooth", block: "start" });
@@ -52,6 +71,21 @@ const App = () => {
 
       {/* About */}
       <About />
+
+      {/* Floating Background Music */}
+      <div className="background-music-container">
+        <button className="floating-button" onClick={handleButtonClick}>
+          <i className={isPlaying ? "fa fa-pause" : "fa fa-play"}></i>
+        </button>
+        {isPlaying && (
+          <style>
+            {`.floating-button::before {
+              animation: none !important;
+              background: transparent !important;
+            }`}
+          </style>
+        )}
+      </div>
 
       {/* Story */}
       <Story />

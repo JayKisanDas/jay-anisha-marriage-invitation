@@ -24,7 +24,7 @@ const Event = () => {
             </h5>
             <h5 className="font-weight-normal text-muted mb-3 pb-3">
               We kindly request that you fill the RSVP form by{" "}
-              <strong>01 Nov 2023</strong> so that we can finalize the guest
+              <strong>01 Dec 2023</strong> so that we can finalize the guest
               list and ensure that all arrangements are made accordingly.
             </h5>
             <h5 className="font-weight-normal text-muted mb-3 pb-3">
