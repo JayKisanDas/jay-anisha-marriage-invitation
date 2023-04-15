@@ -5,7 +5,7 @@ import carousel1 from "../assets/images/carousel-1.jpg";
 import carousel2 from "../assets/images/carousel-2.jpg";
 import "./Carousel.css";
 
-const Carousel = () => {
+const Carousel = ({ isPlaying, pauseBackgroundMusic }) => {
   const [defaultImg, setDefaultImg] = useState(carousel1);
 
   const carouselControlHandler = () => {
@@ -20,6 +20,11 @@ const Carousel = () => {
     }, 5000);
     return () => clearInterval(interval);
   });
+
+  // PAUSE BACKGROUND MUSIC PROP PASSED FROM Youtube.js
+  const handlePauseMusic = (data) => {
+    pauseBackgroundMusic(data); // PAUSE BACKGROUND MUSIC PROP PASSED TO App.js
+  };
 
   return (
     <div className="container-fluid p-0 mb-5 pb-5" id="home">
@@ -48,7 +53,10 @@ const Carousel = () => {
                     We're getting married
                   </h3>
                 </div>
-                <YoutubeModal />
+                <YoutubeModal
+                  isPlaying={isPlaying}
+                  pauseBackgroundMusic={handlePauseMusic}
+                />
               </div>
             </div>
           </div>

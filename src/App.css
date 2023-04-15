@@ -8162,6 +8162,10 @@ a.text-dark:focus {
   padding: 20px 25px;
 }
 
+.background-music-container .floating-button i {
+  position: relative;
+}
+
 .background-music-container .floating-button::before {
   content: "";
   position: absolute;

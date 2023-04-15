@@ -1,17 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+
 import "./YoutubeModal.css";
 
-const YoutubeModal = () => {
-  const [showModal, setShowModal] = useState(false);
+const YoutubeModal = ({ isPlaying, pauseBackgroundMusic }) => {
+  const [showYoutubeModal, setShowYoutubeModal] = useState(false);
 
+  // PAUSING BACKGROUND MUSIC ON OPEN OF YOUTUBE MODAL
+  useEffect(() => {
+    if (isPlaying) {
+      setShowYoutubeModal(false);
+    }
+  }, [isPlaying]);
+
+  // CLOSE YOUTUBE MODAL WHEN CLICKED ON CROSS ICON
   const handleCloseModal = () => {
-    setShowModal(false);
-    document.body.style.overflow = "auto"; // Enable page scroll again
+    setShowYoutubeModal(false);
+    document.body.style.overflow = "auto"; // ENABLE PAGE SCROLL AGAIN
   };
 
+  // OPEN YOUTUBE MODAL
   const handleOpenModal = () => {
-    setShowModal(true);
-    document.body.style.overflow = "hidden"; // Disable page scroll while modal is open
+    setShowYoutubeModal(true);
+    pauseBackgroundMusic(true); // PAUSE BACKGROUND MUSIC PROP PASSED TO Carousel.js
+    document.body.style.overflow = "hidden"; // DISABLE PAGE SCROLL WHILE MODAL IS OPEN
   };
 
   return (
@@ -23,7 +34,15 @@ const YoutubeModal = () => {
       >
         <span></span>
       </button>
-      {showModal && (
+      {showYoutubeModal && (
+        <style>
+          {`.btn-play::before {
+              animation: none !important;
+              background: transparent !important;
+            }`}
+        </style>
+      )}
+      {showYoutubeModal && (
         <div className="modal-dialog" role="document">
           <div className="modal-content">
             <div className="modal-body">
@@ -40,7 +59,7 @@ const YoutubeModal = () => {
               {/* 16:9 aspect ratio */}
               <div className="embed-responsive embed-responsive-16by9">
                 <iframe
-                  src={`https://www.youtube.com/embed/1z7xjrNsLmI`}
+                  src={`https://www.youtube.com/embed/UbMgcdmYC70`}
                   title="YouTube video player"
                   allow="autoplay; picture-in-picture"
                   allowFullScreen

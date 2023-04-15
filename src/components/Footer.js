@@ -4,10 +4,10 @@ const Footer = () => {
       link: "https://twitter.com/JayRomeojay67",
       icon: "fab fa-twitter",
     },
-    {
-      link: "https://www.instagram.com/the_avtar_jay/",
-      icon: "fab fa-facebook-f",
-    },
+    // {
+    //   link: "https://www.instagram.com/the_avtar_jay/",
+    //   icon: "fab fa-facebook-f",
+    // },
     {
       link: "https://www.linkedin.com/in/jay-das-675046131/",
       icon: "fab fa-linkedin-in",

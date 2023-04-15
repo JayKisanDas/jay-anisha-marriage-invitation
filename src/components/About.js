@@ -39,14 +39,14 @@ const About = () => {
                 >
                   <i className="fab fa-twitter"></i>
                 </a>
-                <a
+                {/* <a
                   className="btn btn-outline-primary btn-square mr-1"
                   href="https://twitter.com/JayRomeojay67"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <i className="fab fa-facebook-f"></i>
-                </a>
+                </a> */}
                 <a
                   className="btn btn-outline-primary btn-square mr-1"
                   href="https://www.linkedin.com/in/jay-das-675046131/"
@@ -103,16 +103,16 @@ const About = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i className="fab fa-instagram"></i>
+                  <i className="fab fa-twitter"></i>
                 </a>
-                <a
+                {/* <a
                   className="btn btn-outline-primary btn-square mr-1"
                   href="https://twitter.com/JayRomeojay67"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <i className="fab fa-facebook-f"></i>
-                </a>
+                </a> */}
                 <a
                   className="btn btn-outline-primary btn-square mr-1"
                   href="https://www.linkedin.com/in/jay-das-675046131/"

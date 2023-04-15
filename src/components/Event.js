@@ -23,8 +23,8 @@ const Event = () => {
               our love.
             </h5>
             <h5 className="font-weight-normal text-muted mb-3 pb-3">
-              We kindly request that you fill the RSVP form by{" "}
-              <strong>01 Dec 2023</strong> so that we can finalize the guest
+              We kindly request that you fill the invitation form present below
+              by <strong>01 Dec 2023</strong> so that we can finalize the guest
               list and ensure that all arrangements are made accordingly.
             </h5>
             <h5 className="font-weight-normal text-muted mb-3 pb-3">
@@ -38,16 +38,24 @@ const Event = () => {
             <div className="text-center text-md-right mr-md-3 mb-4 mb-md-0">
               <img className="img-fluid mb-4" src={event1} alt="" />
               <h4 className="mb-3">The Reception</h4>
-              <p className="mb-2">123 Street, New York, USA</p>
-              <p className="mb-0">12:00AM - 13:00PM</p>
+              <p className="mb-2">
+                Ambapua Rd., near Kali Temple, Bima Nagar,
+                <br />
+                Brahmapur, Odisha 760010
+              </p>
+              <p className="mb-0">08:00PM - 10:00PM</p>
             </div>
           </div>
           <div className="col-md-6">
             <div className="text-center text-md-left ml-md-3">
               <img className="img-fluid mb-4" src={event2} alt="" />
               <h4 className="mb-3">Wedding Party</h4>
-              <p className="mb-2">123 Street, New York, USA</p>
-              <p className="mb-0">12:00AM - 13:00PM</p>
+              <p className="mb-2">
+                Ambapua Rd., near Kali Temple, Bima Nagar,
+                <br />
+                Brahmapur, Odisha 760010
+              </p>
+              <p className="mb-0">09:00PM - 12:00AM</p>
             </div>
           </div>
         </div>

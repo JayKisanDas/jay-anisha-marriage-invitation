@@ -9,7 +9,7 @@ import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Story from "./components/Story";
 import Event from "./components/Event";
-import FriendsAndFamily from "./components/FriendsAndFamily";
+import FamilyList from "./components/FamilyList";
 import Rsvp from "./components//InvitationForm/Rsvp";
 import Footer from "./components/Footer";
 
@@ -23,6 +23,7 @@ const App = () => {
     setAudio(new Audio(backgroundMusic));
   }, []);
 
+  // PLAY OR PAUSE OF THE BACKGROUND MUSIC
   const handleButtonClick = () => {
     if (isPlaying) {
       audio.pause();
@@ -61,13 +62,19 @@ const App = () => {
       .scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
+  // PAUSE BACKGROUND MUSIC WHEN CLICK ON YOUTUBE VIDEO MODAL
+  const handlePauseMusic = (data) => {
+    setIsPlaying(!data);
+    audio.pause();
+  };
+
   return (
     <div>
       {/* Navbar */}
       <Navbar />
 
       {/* Carousel */}
-      <Carousel />
+      <Carousel isPlaying={isPlaying} pauseBackgroundMusic={handlePauseMusic} />
 
       {/* About */}
       <About />
@@ -97,7 +104,7 @@ const App = () => {
       <Event />
 
       {/* Friends & Family */}
-      <FriendsAndFamily />
+      <FamilyList />
 
       {/* RSVP */}
       <Rsvp />

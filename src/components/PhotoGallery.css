@@ -60,7 +60,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #e47a2e;
-  background: #ffffff;
-  font-size: 30px;
+  color: #e47a2e !important;
+  background: #ffffff !important;
+  font-size: 30px !important;
+}
+
+.gallery-carousel .owl-nav .owl-prev span,
+.gallery-carousel .owl-nav .owl-next span {
+  font-weight: 900;
 }

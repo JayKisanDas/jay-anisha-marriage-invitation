@@ -43,39 +43,21 @@ const PhotoGallery = () => {
         <OwlCarousel responsive={carouselConfig}>
           <div className="item gallery-item">
             <img className="img-fluid w-100" src={gallery1} alt="gallery1" />
-            <button>
-              <i className="fa fa-2x fa-plus text-white"></i>
-            </button>
           </div>
           <div className="item gallery-item">
             <img className="img-fluid w-100" src={gallery2} alt="gallery2" />
-            <button>
-              <i className="fa fa-2x fa-plus text-white"></i>
-            </button>
           </div>
           <div className="item gallery-item">
             <img className="img-fluid w-100" src={gallery3} alt="gallery3" />
-            <button>
-              <i className="fa fa-2x fa-plus text-white"></i>
-            </button>
           </div>
           <div className="item gallery-item">
             <img className="img-fluid w-100" src={gallery4} alt="gallery4" />
-            <button>
-              <i className="fa fa-2x fa-plus text-white"></i>
-            </button>
           </div>
           <div className="item gallery-item">
             <img className="img-fluid w-100" src={gallery5} alt="gallery5" />
-            <button>
-              <i className="fa fa-2x fa-plus text-white"></i>
-            </button>
           </div>
           <div className="item gallery-item">
             <img className="img-fluid w-100" src={gallery6} alt="gallery6" />
-            <button>
-              <i className="fa fa-2x fa-plus text-white"></i>
-            </button>
           </div>
         </OwlCarousel>
       </div>
