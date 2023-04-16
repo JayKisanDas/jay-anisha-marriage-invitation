@@ -9,14 +9,25 @@ import gallery3 from "../assets/images/gallery-3.jpg";
 import gallery4 from "../assets/images/gallery-4.jpg";
 import gallery5 from "../assets/images/gallery-5.jpg";
 import gallery6 from "../assets/images/gallery-6.jpg";
+import gallery7 from "../assets/images/gallery-7.jpg";
 
 const PhotoGallery = () => {
   const carouselConfig = {
-    0: { items: 1, nav: true },
-    576: { items: 2, nav: true },
+    0: { items: 1, nav: true, loop: true },
+    576: { items: 2, nav: true, loop: true },
     768: { items: 3, nav: true },
     992: { items: 4, nav: true },
   };
+
+  const galleryList = [
+    gallery1,
+    gallery2,
+    gallery3,
+    gallery4,
+    gallery5,
+    gallery6,
+    gallery7,
+  ];
 
   return (
     <div
@@ -41,24 +52,11 @@ const PhotoGallery = () => {
       </div>
       <div className="owl-carousel gallery-carousel">
         <OwlCarousel responsive={carouselConfig}>
-          <div className="item gallery-item">
-            <img className="img-fluid w-100" src={gallery1} alt="gallery1" />
-          </div>
-          <div className="item gallery-item">
-            <img className="img-fluid w-100" src={gallery2} alt="gallery2" />
-          </div>
-          <div className="item gallery-item">
-            <img className="img-fluid w-100" src={gallery3} alt="gallery3" />
-          </div>
-          <div className="item gallery-item">
-            <img className="img-fluid w-100" src={gallery4} alt="gallery4" />
-          </div>
-          <div className="item gallery-item">
-            <img className="img-fluid w-100" src={gallery5} alt="gallery5" />
-          </div>
-          <div className="item gallery-item">
-            <img className="img-fluid w-100" src={gallery6} alt="gallery6" />
-          </div>
+          {galleryList.map((list) => (
+            <div key={list} className="item gallery-item">
+              <img className="img-fluid w-100" src={list} alt="gallery1" />
+            </div>
+          ))}
         </OwlCarousel>
       </div>
     </div>

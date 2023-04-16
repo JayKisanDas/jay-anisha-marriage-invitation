@@ -39,21 +39,26 @@ const Event = () => {
               <img className="img-fluid mb-4" src={event1} alt="" />
               <h4 className="mb-3">The Reception</h4>
               <p className="mb-2">
-                Ambapua Rd., near Kali Temple, Bima Nagar,
+                Ambapua Rd., Near Kali Temple,
                 <br />
-                Brahmapur, Odisha 760010
+                Bima Nagar, Brahmapur, Odisha 760010
               </p>
               <p className="mb-0">08:00PM - 10:00PM</p>
             </div>
           </div>
           <div className="col-md-6">
             <div className="text-center text-md-left ml-md-3">
-              <img className="img-fluid mb-4" src={event2} alt="" />
+              <img
+                className="img-fluid mb-4"
+                style={{ width: "300px" }}
+                src={event2}
+                alt=""
+              />
               <h4 className="mb-3">Wedding Party</h4>
               <p className="mb-2">
-                Ambapua Rd., near Kali Temple, Bima Nagar,
+                Ambapua Rd., Near Kali Temple,
                 <br />
-                Brahmapur, Odisha 760010
+                Bima Nagar, Brahmapur, Odisha 760010
               </p>
               <p className="mb-0">09:00PM - 12:00AM</p>
             </div>

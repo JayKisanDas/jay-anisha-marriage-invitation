@@ -22,7 +22,12 @@ const Story = () => {
         <div className="container timeline position-relative p-0">
           <div className="row">
             <div className="col-md-6 text-center text-md-right">
-              <img className="img-fluid mr-md-3" src={story1} alt="" />
+              <img
+                className="img-fluid mr-md-3"
+                style={{ width: "300px" }}
+                src={story1}
+                alt=""
+              />
             </div>
             <div className="col-md-6 text-center text-md-left">
               <div className="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
@@ -51,12 +56,22 @@ const Story = () => {
               </div>
             </div>
             <div className="col-md-6 text-center text-md-left">
-              <img className="img-fluid ml-md-3" src={story2} alt="" />
+              <img
+                className="img-fluid ml-md-3"
+                style={{ width: "300px" }}
+                src={story2}
+                alt=""
+              />
             </div>
           </div>
           <div className="row">
             <div className="col-md-6 text-center text-md-right">
-              <img className="img-fluid mr-md-3" src={story3} alt="" />
+              <img
+                className="img-fluid mr-md-3"
+                style={{ width: "300px" }}
+                src={story3}
+                alt=""
+              />
             </div>
             <div className="col-md-6 text-center text-md-left">
               <div className="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
@@ -85,7 +100,12 @@ const Story = () => {
               </div>
             </div>
             <div className="col-md-6 text-center text-md-left">
-              <img className="img-fluid ml-md-3" src={story4} alt="" />
+              <img
+                className="img-fluid ml-md-3"
+                style={{ width: "300px" }}
+                src={story4}
+                alt=""
+              />
             </div>
           </div>
         </div>
