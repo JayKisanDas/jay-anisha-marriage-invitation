@@ -32,12 +32,12 @@ const Story = () => {
             <div className="col-md-6 text-center text-md-left">
               <div className="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
                 <h4 className="mb-2">First Meet</h4>
-                <p className="text-uppercase mb-2">04 Sep 2011</p>
+                <p className="text-uppercase mb-2">03 May 2011</p>
                 <p className="m-0">
-                  Lorem elitr magna stet rebum dolores sed. Est stet labore est
-                  lorem lorem at amet sea, eos tempor rebum, labore amet ipsum
-                  sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet
-                  est dolor elitr.
+                  We were classmates but never talked with each other. But our
+                  parents are friends and we started our English tuition
+                  together, don't know that the tuition journey will last
+                  forever 😉
                 </p>
               </div>
             </div>
@@ -48,10 +48,9 @@ const Story = () => {
                 <h4 className="mb-2">First Date</h4>
                 <p className="text-uppercase mb-2">04 Sep 2011</p>
                 <p className="m-0">
-                  Lorem elitr magna stet rebum dolores sed. Est stet labore est
-                  lorem lorem at amet sea, eos tempor rebum, labore amet ipsum
-                  sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet
-                  est dolor elitr.
+                  We are in a "Long Distance Relationship" from the beginning of
+                  our love story. Whenever we meet after a long time, that time
+                  is very special for us with lots of memories.
                 </p>
               </div>
             </div>
@@ -78,10 +77,8 @@ const Story = () => {
                 <h4 className="mb-2">Proposal</h4>
                 <p className="text-uppercase mb-2">04 Sep 2011</p>
                 <p className="m-0">
-                  Lorem elitr magna stet rebum dolores sed. Est stet labore est
-                  lorem lorem at amet sea, eos tempor rebum, labore amet ipsum
-                  sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet
-                  est dolor elitr.
+                  He was innocent and she was cute, and they fell in love. Their
+                  love grew over time, and it added colour to their lives.
                 </p>
               </div>
             </div>
@@ -92,10 +89,11 @@ const Story = () => {
                 <h4 className="mb-2">Engagement</h4>
                 <p className="text-uppercase mb-2">04 Dec 2022</p>
                 <p className="m-0">
-                  Lorem elitr magna stet rebum dolores sed. Est stet labore est
-                  lorem lorem at amet sea, eos tempor rebum, labore amet ipsum
-                  sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet
-                  est dolor elitr.
+                  Our love is a dream come true. Wearing your ring on my finger
+                  is the most magical feeling in the world. This day made us
+                  realise that " yes we did it". Love within us is growing with
+                  glowing stars. Love is not just a word but love gave us
+                  everything.
                 </p>
               </div>
             </div>

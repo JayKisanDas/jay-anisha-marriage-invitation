@@ -22,10 +22,12 @@ const About = () => {
             <div className="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
               <h3 className="mb-3">The Groom</h3>
               <p>
-                Lorem elitr magna stet rebum dolores sed. Est stet labore est
-                lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea
-                lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est
-                dolor elitr.
+                I have manifested this day as the best day of my life. I love
+                the way she makes me feel loved, cherished, and supported. I
+                love the way her eyes light up when she sees me, and the way she
+                always knows how to make me laugh. I can't wait to grow old with
+                her and create a family together. We will build a life full of
+                love, laughter, and adventure.
               </p>
               <h3 className="font-secondary font-weight-normal text-muted mb-3">
                 <i className="fa fa-male text-primary pr-3"></i>Jay
@@ -39,14 +41,6 @@ const About = () => {
                 >
                   <i className="fab fa-twitter"></i>
                 </a>
-                {/* <a
-                  className="btn btn-outline-primary btn-square mr-1"
-                  href="https://twitter.com/JayRomeojay67"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i className="fab fa-facebook-f"></i>
-                </a> */}
                 <a
                   className="btn btn-outline-primary btn-square mr-1"
                   href="https://www.linkedin.com/in/jay-das-675046131/"
@@ -88,10 +82,13 @@ const About = () => {
             <div className="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
               <h3 className="mb-3">The Bride</h3>
               <p>
-                Lorem elitr magna stet rebum dolores sed. Est stet labore est
-                lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea
-                lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est
-                dolor elitr.
+                I am "The Happiest Bride" of 2023 and my dream from 2011 is
+                about to come true. It has been a journey of ups and downs with
+                Jay, but we have grown stronger together. The support of our
+                families is invaluable, although it does come with its fair
+                share of drama. I can't wait to see Jay standing before me as my
+                groom. The mix of emotions I'm feeling is indescribable, and I
+                can't wait for our wedding day.
               </p>
               <h3 className="font-secondary font-weight-normal text-muted mb-3">
                 <i className="fa fa-female text-primary pr-3"></i>Anisha
@@ -105,14 +102,6 @@ const About = () => {
                 >
                   <i className="fab fa-twitter"></i>
                 </a>
-                {/* <a
-                  className="btn btn-outline-primary btn-square mr-1"
-                  href="https://twitter.com/JayRomeojay67"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i className="fab fa-facebook-f"></i>
-                </a> */}
                 <a
                   className="btn btn-outline-primary btn-square mr-1"
                   href="https://www.linkedin.com/in/jay-das-675046131/"
