@@ -1,38 +1,68 @@
 import React, { useState, useRef } from "react";
+import Select from "react-select";
 
 import db from "../../Firebase";
 import FormSubmitAlert from "./FormSubmitAlert";
 
 const Rsvp = () => {
   const formRef = useRef(null);
-  const [selectedOption, setSelectedOption] = useState("");
+  // const [selectedOption, setSelectedOption] = useState("");
+  const [selectedOptions, setSelectedOptions] = useState([]);
   const [selectedGuestNumber, setSelectedGuestNumber] = useState("");
   const [formData, setFormData] = useState({});
   const [submitted, setSubmitted] = useState(false);
-
+  const customStyles = {
+    control: (provided, state) => ({
+      ...provided,
+      border: state.isFocused ? "none" : "none",
+      backgroundColor: "#edf5f7",
+      padding: "0",
+      textAlign: "left",
+      boxShadow: "none",
+      "&:hover": {
+        border: "none",
+      },
+    }),
+    multiValue: (provided) => ({
+      ...provided,
+      backgroundColor: "#d1671b",
+    }),
+    multiValueLabel: (provided) => ({
+      ...provided,
+      color: "white",
+    }),
+    multiValueRemove: (provided) => ({
+      ...provided,
+      color: "white",
+    }),
+    valueContainer: (provided) => ({
+      ...provided,
+      paddingLeft: "2px",
+    }),
+  };
   const options = [
+    // {
+    //   id: 0,
+    //   label: "All Events",
+    //   value: "all",
+    // },
     {
       id: 1,
-      label: "All Events",
-      value: "all",
-    },
-    {
-      id: 2,
       label: "Sangeet Party",
       value: "sangeet",
     },
     {
-      id: 3,
+      id: 2,
       label: "Mehendi Party",
       value: "mehendi",
     },
     {
-      id: 4,
+      id: 3,
       label: "Haldi Party",
       value: "haldi",
     },
     {
-      id: 5,
+      id: 4,
       label: "Wedding Party",
       value: "weeding",
     },
@@ -48,13 +78,22 @@ const Rsvp = () => {
   };
 
   // ON ATTEND DROPDOWN CHANGE
-  const onChangeHandler = (event) => {
-    setSelectedOption(event.target.value);
+  const handleSelectChange = (selectedOptions) => {
+    setSelectedOptions(selectedOptions);
     setFormData({
       ...formData,
-      [event.target.name]: event.target.value,
+      attendingEvent: selectedOptions,
     });
   };
+
+  // ON ATTEND DROPDOWN CHANGE
+  // const onChangeHandler = (event) => {
+  //   setSelectedOption(event.target.value);
+  //   setFormData({
+  //     ...formData,
+  //     [event.target.name]: event.target.value,
+  //   });
+  // };
 
   // ON CHANGE FORM INPUTS
   const handleChange = (event) => {
@@ -82,7 +121,7 @@ const Rsvp = () => {
   // ON RESET FORM
   const handleReset = () => {
     formRef.current.reset(); // RESET THE FORM
-    setSelectedOption("");
+    setSelectedOptions([]);
     setSelectedGuestNumber("");
     setTimeout(() => {
       setSubmitted(false); // CLEAR THE SUBMITTED STATE AFTER A SHORT DELAY
@@ -149,7 +188,20 @@ const Rsvp = () => {
                     </select>
                   </div>
                   <div className="form-group col-sm-6">
-                    <select
+                    <Select
+                      className="form-control bg-secondary border-0 multiselect-dropdown"
+                      styles={customStyles}
+                      required="required"
+                      name="attendingEvent"
+                      id="attendingEvent"
+                      isMulti
+                      placeholder="I'm Attending"
+                      options={options}
+                      value={selectedOptions}
+                      onChange={handleSelectChange}
+                    />
+
+                    {/* <select
                       value={selectedOption}
                       className="form-control bg-secondary border-0"
                       onChange={onChangeHandler}
@@ -165,7 +217,7 @@ const Rsvp = () => {
                           {option.label}
                         </option>
                       ))}
-                    </select>
+                    </select> */}
                   </div>
                 </div>
                 <div className="form-group">

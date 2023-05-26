@@ -1971,6 +1971,10 @@ pre code {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+.form-control.multiselect-dropdown {
+  height: auto !important;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .form-control {
     transition: none;
