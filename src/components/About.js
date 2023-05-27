@@ -33,7 +33,7 @@ const About = () => {
               <div className="position-relative">
                 <a
                   className="btn btn-outline-primary btn-square mr-1"
-                  href="https://twitter.com/JayRomeojay67"
+                  href="https://twitter.com/JayDas97"
                   target="_blank"
                   rel="noreferrer"
                 >

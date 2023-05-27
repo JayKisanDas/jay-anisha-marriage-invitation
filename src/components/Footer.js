@@ -1,7 +1,7 @@
 const Footer = () => {
   const socialLinks = [
     {
-      link: "https://twitter.com/JayRomeojay67",
+      link: "https://twitter.com/JayDas97",
       icon: "fab fa-twitter",
     },
     // {

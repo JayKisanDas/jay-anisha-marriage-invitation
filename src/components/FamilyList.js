@@ -17,8 +17,9 @@ const FamilyList = () => {
       fullName: "Digambar Das",
       desc: "Groom's Father",
       imgSrc: groomFamily1,
-      instagramLink: "https://www.instagram.com/the_avtar_jay/",
-      facebookLink: "",
+      instagramLink: "",
+      facebookLink:
+        "https://www.facebook.com/digambar.das.71653?mibextid=ZbWKwL",
       linkedinLink: "",
       twitterLink: "",
     },
@@ -29,7 +30,8 @@ const FamilyList = () => {
       desc: "Bride's Father",
       imgSrc: brideFamily1,
       instagramLink: "https://www.instagram.com/sanatkumarraut/",
-      facebookLink: "",
+      facebookLink:
+        "https://www.facebook.com/profile.php?id=100008202887640&mibextid=ZbWKwL",
       linkedinLink: "",
       twitterLink: "",
     },
@@ -39,8 +41,8 @@ const FamilyList = () => {
       fullName: "Kumkum Das",
       desc: "Groom's Mother",
       imgSrc: groomFamily2,
-      instagramLink: "https://www.instagram.com/the_avtar_jay/",
-      facebookLink: "",
+      instagramLink: "",
+      facebookLink: "https://www.facebook.com/kumkum.das.3720?mibextid=ZbWKwL",
       linkedinLink: "",
       twitterLink: "",
     },
@@ -51,7 +53,7 @@ const FamilyList = () => {
       desc: "Bride's Mother",
       imgSrc: brideFamily2,
       instagramLink: "https://www.instagram.com/aslesa_19/",
-      facebookLink: "",
+      facebookLink: "https://www.facebook.com/aslesa.padhi?mibextid=ZbWKwL",
       linkedinLink: "",
       twitterLink: "",
     },
@@ -62,8 +64,8 @@ const FamilyList = () => {
       desc: "Groom's Brother",
       imgSrc: groomFamily3,
       instagramLink: "https://www.instagram.com/__.btw.its_sam._/",
-      facebookLink: "",
-      linkedinLink: "",
+      facebookLink: "https://www.facebook.com/Sambit.kumar143?mibextid=ZbWKwL",
+      linkedinLink: "https://www.linkedin.com/in/sambit-kumar-das-a42a0919b/",
       twitterLink: "",
     },
     {
@@ -74,7 +76,7 @@ const FamilyList = () => {
       imgSrc: brideFamily3,
       instagramLink: "https://www.instagram.com/__shital____/",
       facebookLink: "",
-      linkedinLink: "",
+      linkedinLink: "https://www.linkedin.com/in/shital-raut-7970a1205/",
       twitterLink: "",
     },
   ];
@@ -145,7 +147,7 @@ const FamilyList = () => {
                     {list.twitterLink && (
                       <a
                         className="mx-2"
-                        href="https://twitter.com/JayRomeojay67"
+                        href="https://twitter.com/JayDas97"
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -155,7 +157,7 @@ const FamilyList = () => {
                     {list.facebookLink && (
                       <a
                         className="mx-2"
-                        href="https://twitter.com/JayRomeojay67"
+                        href="https://twitter.com/JayDas97"
                         target="_blank"
                         rel="noreferrer"
                       >
