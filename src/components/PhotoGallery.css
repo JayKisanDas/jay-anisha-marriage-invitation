@@ -63,9 +63,12 @@
   color: #e47a2e !important;
   background: #ffffff !important;
   font-size: 30px !important;
+  border-radius: 50%;
 }
 
 .gallery-carousel .owl-nav .owl-prev span,
 .gallery-carousel .owl-nav .owl-next span {
   font-weight: 900;
+  width: 100%;
+  height: 85%;
 }

@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 
-import YoutubeModal from "./YoutubeModal";
-import carousel1 from "../assets/images/carousel-1.jpg";
-import carousel2 from "../assets/images/carousel-2.jpg";
+import YoutubeModal from "../YoutubeModal";
+import CountdownTimer from "./CountdownTimer";
+import carousel1 from "../../assets/images/carousel-1.jpg";
+import carousel2 from "../../assets/images/carousel-2.jpg";
 import "./Carousel.css";
 
 const Carousel = ({ isPlaying, pauseBackgroundMusic }) => {
@@ -45,6 +46,7 @@ const Carousel = ({ isPlaying, pauseBackgroundMusic }) => {
                 <h1 className="display-1 font-secondary text-white mt-n3 mb-md-4">
                   Jay & Anisha
                 </h1>
+                <CountdownTimer />
                 <div className="d-inline-block border-top border-bottom border-light py-3 px-4">
                   <h3
                     className="text-uppercase font-weight-normal text-white m-0"

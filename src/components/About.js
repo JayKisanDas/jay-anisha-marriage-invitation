@@ -1,5 +1,3 @@
-import "./About.css";
-
 import about1 from "../assets/images/about-1.jpg";
 import about2 from "../assets/images/about-2.jpg";
 
@@ -43,7 +41,7 @@ const About = () => {
                 </a>
                 <a
                   className="btn btn-outline-primary btn-square mr-1"
-                  href="https://www.linkedin.com/in/jay-das-675046131/"
+                  href="https://www.linkedin.com/in/jay-kisan-das/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -96,15 +94,7 @@ const About = () => {
               <div className="position-relative">
                 <a
                   className="btn btn-outline-primary btn-square mr-1"
-                  href="https://www.instagram.com/the_avtar_jay/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <i className="fab fa-twitter"></i>
-                </a>
-                <a
-                  className="btn btn-outline-primary btn-square mr-1"
-                  href="https://www.linkedin.com/in/jay-das-675046131/"
+                  href="https://www.linkedin.com/in/anisha-raut-877b54126/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -112,7 +102,7 @@ const About = () => {
                 </a>
                 <a
                   className="btn btn-outline-primary btn-square"
-                  href="https://www.instagram.com/the_avtar_jay/"
+                  href="https://www.instagram.com/__.jkd_girl.__/"
                   target="_blank"
                   rel="noreferrer"
                 >

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import $ from "jquery";
 
 import brideFamily1 from "../assets/images/bridesmaid-1.jpg";
@@ -11,7 +10,6 @@ import groomFamily3 from "../assets/images/groomsmen-3.jpg";
 
 const FamilyList = () => {
   const [filterValue, setFilterValue] = useState("");
-
   const familyList = [
     {
       id: 1,
@@ -19,6 +17,10 @@ const FamilyList = () => {
       fullName: "Digambar Das",
       desc: "Groom's Father",
       imgSrc: groomFamily1,
+      instagramLink: "https://www.instagram.com/the_avtar_jay/",
+      facebookLink: "",
+      linkedinLink: "",
+      twitterLink: "",
     },
     {
       id: 2,
@@ -26,6 +28,10 @@ const FamilyList = () => {
       fullName: "Sanat Kumar Raut",
       desc: "Bride's Father",
       imgSrc: brideFamily1,
+      instagramLink: "https://www.instagram.com/sanatkumarraut/",
+      facebookLink: "",
+      linkedinLink: "",
+      twitterLink: "",
     },
     {
       id: 3,
@@ -33,13 +39,21 @@ const FamilyList = () => {
       fullName: "Kumkum Das",
       desc: "Groom's Mother",
       imgSrc: groomFamily2,
+      instagramLink: "https://www.instagram.com/the_avtar_jay/",
+      facebookLink: "",
+      linkedinLink: "",
+      twitterLink: "",
     },
     {
       id: 4,
       category: "bride",
-      fullName: "Ashlesha Padhy",
+      fullName: "Aslesa Padhi",
       desc: "Bride's Mother",
       imgSrc: brideFamily2,
+      instagramLink: "https://www.instagram.com/aslesa_19/",
+      facebookLink: "",
+      linkedinLink: "",
+      twitterLink: "",
     },
     {
       id: 5,
@@ -47,6 +61,10 @@ const FamilyList = () => {
       fullName: "Sambit Kumar Das",
       desc: "Groom's Brother",
       imgSrc: groomFamily3,
+      instagramLink: "https://www.instagram.com/__.btw.its_sam._/",
+      facebookLink: "",
+      linkedinLink: "",
+      twitterLink: "",
     },
     {
       id: 6,
@@ -54,6 +72,10 @@ const FamilyList = () => {
       fullName: "Shital Raut",
       desc: "Bride's Sister",
       imgSrc: brideFamily3,
+      instagramLink: "https://www.instagram.com/__shital____/",
+      facebookLink: "",
+      linkedinLink: "",
+      twitterLink: "",
     },
   ];
 
@@ -120,38 +142,46 @@ const FamilyList = () => {
                   <h4 className="mb-3">{list.fullName}</h4>
                   <p className="text-uppercase">{list.desc}</p>
                   <div className="d-inline-block">
-                    <a
-                      className="mx-2"
-                      href="https://twitter.com/JayRomeojay67"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <i className="fab fa-twitter"></i>
-                    </a>
-                    <a
-                      className="mx-2"
-                      href="https://twitter.com/JayRomeojay67"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <i className="fab fa-facebook-f"></i>
-                    </a>
-                    <a
-                      className="mx-2"
-                      href="https://www.linkedin.com/in/jay-das-675046131/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <i className="fab fa-linkedin-in"></i>
-                    </a>
-                    <a
-                      className="mx-2"
-                      href="https://www.instagram.com/the_avtar_jay/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <i className="fab fa-instagram"></i>
-                    </a>
+                    {list.twitterLink && (
+                      <a
+                        className="mx-2"
+                        href="https://twitter.com/JayRomeojay67"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <i className="fab fa-twitter"></i>
+                      </a>
+                    )}
+                    {list.facebookLink && (
+                      <a
+                        className="mx-2"
+                        href="https://twitter.com/JayRomeojay67"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <i className="fab fa-facebook-f"></i>
+                      </a>
+                    )}
+                    {list.linkedinLink && (
+                      <a
+                        className="mx-2"
+                        href="https://www.linkedin.com/in/jay-kisan-das/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <i className="fab fa-linkedin-in"></i>
+                      </a>
+                    )}
+                    {list.instagramLink && (
+                      <a
+                        className="mx-2"
+                        href={list.instagramLink}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <i className="fab fa-instagram"></i>
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>

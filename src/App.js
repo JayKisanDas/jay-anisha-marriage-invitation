@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
+import $ from "jquery";
 
 import "./App.css";
-
-import $ from "jquery";
-import Carousel from "./components/Carousel";
+import Carousel from "./components/Carousel/Carousel";
 import PhotoGallery from "./components/PhotoGallery";
 import Navbar from "./components/Navbar";
 import About from "./components/About";

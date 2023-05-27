@@ -150,6 +150,7 @@ const Rsvp = () => {
                     <input
                       type="text"
                       className="form-control bg-secondary border-0 py-4 px-3"
+                      required="required"
                       placeholder="Full Name"
                       name="fullName"
                       id="fullName"

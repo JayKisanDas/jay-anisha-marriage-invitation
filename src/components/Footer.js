@@ -9,7 +9,7 @@ const Footer = () => {
     //   icon: "fab fa-facebook-f",
     // },
     {
-      link: "https://www.linkedin.com/in/jay-das-675046131/",
+      link: "https://www.linkedin.com/in/jay-kisan-das/",
       icon: "fab fa-linkedin-in",
     },
     {
