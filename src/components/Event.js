@@ -115,8 +115,14 @@ const Event = () => {
               </p>
               <p className="mb-2">
                 <FontAwesomeIcon icon={faMapMarkerAlt} />
-                &nbsp; Opposite to Bharat Petrol Pump, Dasrathpur, Jajpur,
-                Odisha 755006
+                <a
+                  target="_blank"
+                  href="https://goo.gl/maps/WoxQ63LimQ4FAgf66"
+                  rel="noreferrer"
+                >
+                  &nbsp; Sai Function Palace, Opposite to Bharat Petrol Pump,
+                  Dasrathpur, Jajpur, Odisha 755006
+                </a>
               </p>
               <p className="mb-0">
                 <FontAwesomeIcon icon={faClock} />
