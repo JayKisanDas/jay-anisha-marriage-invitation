@@ -8,7 +8,7 @@ const Rsvp = () => {
   const formRef = useRef(null);
   // const [selectedOption, setSelectedOption] = useState("");
   const [selectedOptions, setSelectedOptions] = useState([]);
-  const [selectedGuestNumber, setSelectedGuestNumber] = useState("");
+  // const [selectedGuestNumber, setSelectedGuestNumber] = useState("");
   const [formData, setFormData] = useState({});
   const [submitted, setSubmitted] = useState(false);
   const customStyles = {
@@ -69,13 +69,13 @@ const Rsvp = () => {
   ];
 
   // ON GUEST NUMBER DROPDOWN CHANGE
-  const onChangeGuestNumberHandler = (event) => {
-    setSelectedGuestNumber(event.target.value);
-    setFormData({
-      ...formData,
-      [event.target.name]: event.target.value,
-    });
-  };
+  // const onChangeGuestNumberHandler = (event) => {
+  //   setSelectedGuestNumber(event.target.value);
+  //   setFormData({
+  //     ...formData,
+  //     [event.target.name]: event.target.value,
+  //   });
+  // };
 
   // ON ATTEND DROPDOWN CHANGE
   const handleSelectChange = (selectedOptions) => {
@@ -106,11 +106,14 @@ const Rsvp = () => {
   // ON SUBMIT FORM
   const handleSubmit = (event) => {
     event.preventDefault();
+    if (!formData?.message) {
+      formData.message = "";
+    }
     db.collection("posts").add({
       attendingEvent: formData.attendingEvent,
-      emailId: formData.emailId || "",
+      // emailId: formData.emailId || "",
       fullName: formData.fullName,
-      guestNumber: Number(formData.guestNumber) || 1,
+      // guestNumber: Number(formData.guestNumber) || 1,
       message: formData.message,
       timestamp: new Date().getTime(),
     });
@@ -122,7 +125,7 @@ const Rsvp = () => {
   const handleReset = () => {
     formRef.current.reset(); // RESET THE FORM
     setSelectedOptions([]);
-    setSelectedGuestNumber("");
+    // setSelectedGuestNumber("");
     setTimeout(() => {
       setSubmitted(false); // CLEAR THE SUBMITTED STATE AFTER A SHORT DELAY
     }, 1000);
@@ -146,7 +149,7 @@ const Rsvp = () => {
             <div className="text-center">
               <form ref={formRef} onSubmit={handleSubmit}>
                 <div className="form-row">
-                  <div className="form-group col-sm-6">
+                  <div className="form-group col-sm-12">
                     <input
                       type="text"
                       className="form-control bg-secondary border-0 py-4 px-3"
@@ -158,7 +161,7 @@ const Rsvp = () => {
                       onChange={handleChange}
                     />
                   </div>
-                  <div className="form-group col-sm-6">
+                  {/* <div className="form-group col-sm-6">
                     <input
                       type="email"
                       className="form-control bg-secondary border-0 py-4 px-3"
@@ -167,10 +170,10 @@ const Rsvp = () => {
                       id="emailId"
                       onChange={handleChange}
                     />
-                  </div>
+                  </div> */}
                 </div>
                 <div className="form-row">
-                  <div className="form-group col-sm-6">
+                  {/* <div className="form-group col-sm-6">
                     <select
                       value={selectedGuestNumber}
                       className="form-control bg-secondary border-0"
@@ -187,8 +190,8 @@ const Rsvp = () => {
                       <option>3</option>
                       <option>4</option>
                     </select>
-                  </div>
-                  <div className="form-group col-sm-6">
+                  </div> */}
+                  <div className="form-group col-sm-12">
                     <Select
                       className="form-control bg-secondary border-0 multiselect-dropdown"
                       styles={customStyles}
@@ -226,7 +229,7 @@ const Rsvp = () => {
                     className="form-control bg-secondary border-0 py-2 px-3"
                     rows="5"
                     placeholder="Message"
-                    required="required"
+                    // required="required"
                     name="message"
                     id="message"
                     onChange={handleChange}

@@ -52,11 +52,11 @@ const Event = () => {
               honor for us to have you join us on this special day to celebrate
               our love.
             </h5>
-            <h5 className="font-weight-normal text-muted mb-3 pb-3">
+            {/* <h5 className="font-weight-normal text-muted mb-3 pb-3">
               We kindly request that you fill the invitation form present below
               by <strong>01 Dec 2023</strong> so that we can finalize the guest
               list and ensure that all arrangements are made accordingly.
-            </h5>
+            </h5> */}
             <h5 className="font-weight-normal text-muted mb-3 pb-3">
               We are thrilled to have you join us on this joyous occasion, and
               we look forward to creating our unforgettable memories together.
