@@ -8,6 +8,7 @@ const Rsvp = () => {
   const formRef = useRef(null);
   // const [selectedOption, setSelectedOption] = useState("");
   const [selectedOptions, setSelectedOptions] = useState([]);
+  const [selectedSideOption, setSelectedSideOption] = useState([]);
   // const [selectedGuestNumber, setSelectedGuestNumber] = useState("");
   const [formData, setFormData] = useState({});
   const [submitted, setSubmitted] = useState(false);
@@ -41,11 +42,6 @@ const Rsvp = () => {
     }),
   };
   const options = [
-    // {
-    //   id: 0,
-    //   label: "All Events",
-    //   value: "all",
-    // },
     {
       id: 1,
       label: "Mehendi (5th Dec. 2023 - Morning)",
@@ -67,15 +63,27 @@ const Rsvp = () => {
       value: "wedding",
     },
   ];
+  const sideOptions = [
+    {
+      id: 1,
+      label: "Bride's Guest",
+      value: "bride",
+    },
+    {
+      id: 2,
+      label: "Groom's Guest",
+      value: "groom",
+    },
+  ];
 
-  // ON GUEST NUMBER DROPDOWN CHANGE
-  // const onChangeGuestNumberHandler = (event) => {
-  //   setSelectedGuestNumber(event.target.value);
-  //   setFormData({
-  //     ...formData,
-  //     [event.target.name]: event.target.value,
-  //   });
-  // };
+  // ON ATTEND AS DROPDOWN CHANGE
+  const handleSelectSideChange = (selectedSideOption) => {
+    setSelectedSideOption(selectedSideOption);
+    setFormData({
+      ...formData,
+      attendingAs: selectedSideOption,
+    });
+  };
 
   // ON ATTEND DROPDOWN CHANGE
   const handleSelectChange = (selectedOptions) => {
@@ -85,15 +93,6 @@ const Rsvp = () => {
       attendingEvent: selectedOptions,
     });
   };
-
-  // ON ATTEND DROPDOWN CHANGE
-  // const onChangeHandler = (event) => {
-  //   setSelectedOption(event.target.value);
-  //   setFormData({
-  //     ...formData,
-  //     [event.target.name]: event.target.value,
-  //   });
-  // };
 
   // ON CHANGE FORM INPUTS
   const handleChange = (event) => {
@@ -110,6 +109,7 @@ const Rsvp = () => {
       formData.message = "";
     }
     db.collection("posts").add({
+      attendingAs: formData.attendingAs,
       attendingEvent: formData.attendingEvent,
       // emailId: formData.emailId || "",
       fullName: formData.fullName,
@@ -124,8 +124,8 @@ const Rsvp = () => {
   // ON RESET FORM
   const handleReset = () => {
     formRef.current.reset(); // RESET THE FORM
+    setSelectedSideOption([]);
     setSelectedOptions([]);
-    // setSelectedGuestNumber("");
     setTimeout(() => {
       setSubmitted(false); // CLEAR THE SUBMITTED STATE AFTER A SHORT DELAY
     }, 1000);
@@ -161,36 +161,24 @@ const Rsvp = () => {
                       onChange={handleChange}
                     />
                   </div>
-                  {/* <div className="form-group col-sm-6">
-                    <input
-                      type="email"
-                      className="form-control bg-secondary border-0 py-4 px-3"
-                      placeholder="Your Email"
-                      name="emailId"
-                      id="emailId"
-                      onChange={handleChange}
-                    />
-                  </div> */}
                 </div>
                 <div className="form-row">
-                  {/* <div className="form-group col-sm-6">
-                    <select
-                      value={selectedGuestNumber}
-                      className="form-control bg-secondary border-0"
-                      style={{ height: "52px" }}
-                      onChange={onChangeGuestNumberHandler}
-                      name="guestNumber"
-                      id="guestNumber"
-                    >
-                      <option value="" disabled>
-                        Number of Guest
-                      </option>
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                    </select>
-                  </div> */}
+                  <div className="form-group col-sm-12">
+                    <Select
+                      className="form-control bg-secondary border-0 multiselect-dropdown"
+                      styles={customStyles}
+                      required="required"
+                      name="attendingAs"
+                      id="attendingAs"
+                      isMulti
+                      placeholder="I'm Attending As"
+                      options={sideOptions}
+                      value={selectedSideOption}
+                      onChange={handleSelectSideChange}
+                    />
+                  </div>
+                </div>
+                <div className="form-row">
                   <div className="form-group col-sm-12">
                     <Select
                       className="form-control bg-secondary border-0 multiselect-dropdown"
@@ -204,24 +192,6 @@ const Rsvp = () => {
                       value={selectedOptions}
                       onChange={handleSelectChange}
                     />
-
-                    {/* <select
-                      value={selectedOption}
-                      className="form-control bg-secondary border-0"
-                      onChange={onChangeHandler}
-                      required="required"
-                      name="attendingEvent"
-                      id="attendingEvent"
-                    >
-                      <option value="" disabled>
-                        I'm Attending
-                      </option>
-                      {options.map((option) => (
-                        <option key={option.id} value={option.value}>
-                          {option.label}
-                        </option>
-                      ))}
-                    </select> */}
                   </div>
                 </div>
                 <div className="form-group">
@@ -229,7 +199,6 @@ const Rsvp = () => {
                     className="form-control bg-secondary border-0 py-2 px-3"
                     rows="5"
                     placeholder="Message"
-                    // required="required"
                     name="message"
                     id="message"
                     onChange={handleChange}
