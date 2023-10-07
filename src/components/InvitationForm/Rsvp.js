@@ -48,23 +48,23 @@ const Rsvp = () => {
     // },
     {
       id: 1,
-      label: "Sangeet Party",
-      value: "sangeet",
-    },
-    {
-      id: 2,
-      label: "Mehendi Party",
+      label: "Mehendi (5th Dec. 2023 - Morning)",
       value: "mehendi",
     },
     {
+      id: 2,
+      label: "Sangeet (5th Dec. 2023 - Evening)",
+      value: "sangeet",
+    },
+    {
       id: 3,
-      label: "Haldi Party",
+      label: "Haldi (6th Dec. 2023 - Morning)",
       value: "haldi",
     },
     {
       id: 4,
-      label: "Wedding Party",
-      value: "weeding",
+      label: "Wedding (6th Dec. 2023 - Evening)",
+      value: "wedding",
     },
   ];
 
