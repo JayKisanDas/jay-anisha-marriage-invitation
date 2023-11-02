@@ -64,11 +64,11 @@ const Event = () => {
           </div>
         </div>
         <div className="row">
-          {/* WEDDING PARTY */}
+          {/* WEDDING */}
           <div className="col-md-6 border-right border-primary">
             <div className="text-center text-md-right mr-md-3 mb-4 mb-md-0">
               <img className="img-fluid mb-4" src={event1} alt="" />
-              <h4 className="mb-3">Wedding Party</h4>
+              <h4 className="mb-3">Wedding</h4>
               <p className="mb-2">
                 {!isWidthMoreThan768 && (
                   <FontAwesomeIcon icon={faCalendarDay} />
@@ -94,12 +94,12 @@ const Event = () => {
               </p>
               <p className="mb-0">
                 {!isWidthMoreThan768 && <FontAwesomeIcon icon={faClock} />}
-                &nbsp; 07:00PM - 10:00PM &nbsp;
+                &nbsp; 07:30 PM Onwards &nbsp;
                 {isWidthMoreThan768 && <FontAwesomeIcon icon={faClock} />}
               </p>
             </div>
           </div>
-          {/* THE RECEPTION */}
+          {/* RECEPTION */}
           <div className="col-md-6">
             <div className="text-center text-md-left ml-md-3">
               <img
@@ -108,10 +108,10 @@ const Event = () => {
                 src={event2}
                 alt=""
               />
-              <h4 className="mb-3">The Reception</h4>
+              <h4 className="mb-3">Reception</h4>
               <p className="mb-2">
                 <FontAwesomeIcon icon={faCalendarDay} />
-                &nbsp; 09th December 2023
+                &nbsp; 10th December 2023
               </p>
               <p className="mb-2">
                 <FontAwesomeIcon icon={faMapMarkerAlt} />
@@ -126,7 +126,7 @@ const Event = () => {
               </p>
               <p className="mb-0">
                 <FontAwesomeIcon icon={faClock} />
-                &nbsp; 07:00PM - 10:00PM
+                &nbsp; 07:30 PM Onwards
               </p>
             </div>
           </div>

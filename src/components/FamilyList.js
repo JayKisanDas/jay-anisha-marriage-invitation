@@ -106,9 +106,7 @@ const FamilyList = () => {
           >
             Friends & Family
           </h6>
-          <h1 className="font-secondary display-4">
-            Groom's Family & Bride's Family
-          </h1>
+          <h1 className="font-secondary display-4">Groom's & Bride's Family</h1>
           <i className="far fa-heart text-dark"></i>
         </div>
         <div className="row">
@@ -147,7 +145,7 @@ const FamilyList = () => {
                     {list.twitterLink && (
                       <a
                         className="mx-2"
-                        href="https://twitter.com/JayDas97"
+                        href={list.twitterLink}
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -157,7 +155,7 @@ const FamilyList = () => {
                     {list.facebookLink && (
                       <a
                         className="mx-2"
-                        href="https://twitter.com/JayDas97"
+                        href={list.facebookLink}
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -167,7 +165,7 @@ const FamilyList = () => {
                     {list.linkedinLink && (
                       <a
                         className="mx-2"
-                        href="https://www.linkedin.com/in/jay-kisan-das/"
+                        href={list.linkedinLink}
                         target="_blank"
                         rel="noreferrer"
                       >

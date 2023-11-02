@@ -62,6 +62,11 @@ const Rsvp = () => {
       label: "Wedding (6th Dec. 2023 - Evening)",
       value: "wedding",
     },
+    {
+      id: 5,
+      label: "Reception (10th Dec. 2023 - Evening)",
+      value: "reception",
+    },
   ];
   const sideOptions = [
     {
