@@ -50,7 +50,7 @@ const PhotoGallery = () => {
           Gallery
         </h6>
         <h1 className="font-secondary display-4 text-white">
-          👨🏻‍👩🏻‍👦🏻‍🧒🏻Our Photo Gallery🖼️
+          🤵🏻💖👰🏻Our Photo Gallery🖼️
         </h1>
         <i className="far fa-heart text-white"></i>
       </div>
