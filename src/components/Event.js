@@ -42,15 +42,15 @@ const Event = () => {
           >
             Event
           </h6>
-          <h1 className="font-secondary display-4">Our Wedding Event</h1>
+          <h1 className="font-secondary display-4">💍Our Wedding Event 🍽️</h1>
           <i className="far fa-heart text-dark"></i>
         </div>
         <div className="row justify-content-center">
           <div className="col-md-6 text-center">
             <h5 className="font-weight-normal text-muted mb-3 pb-3">
-              We are pleased to invite you to our wedding event. It is a great
-              honor for us to have you join us on this special day to celebrate
-              our love.
+              🎉 We're delighted to invite you to our wedding celebration! It
+              would be an absolute honor to have you join us on this
+              extraordinary day as we celebrate our love.
             </h5>
             {/* <h5 className="font-weight-normal text-muted mb-3 pb-3">
               We kindly request that you fill the invitation form present below
@@ -58,8 +58,8 @@ const Event = () => {
               list and ensure that all arrangements are made accordingly.
             </h5> */}
             <h5 className="font-weight-normal text-muted mb-3 pb-3">
-              We are thrilled to have you join us on this joyous occasion, and
-              we look forward to creating our unforgettable memories together.
+              We're so excited for you to be part of our joyous occasion, and we
+              can't wait to create unforgettable memories together! 🤵‍♂️👰‍♀️💕
             </h5>
           </div>
         </div>

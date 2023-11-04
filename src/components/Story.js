@@ -16,7 +16,7 @@ const Story = () => {
           >
             Story
           </h6>
-          <h1 className="font-secondary display-4">Our Love Story</h1>
+          <h1 className="font-secondary display-4">💖Our Love Story👨🏻‍🤝‍👩🏻</h1>
           <i className="far fa-heart text-dark"></i>
         </div>
         <div className="container timeline position-relative p-0">
@@ -34,10 +34,10 @@ const Story = () => {
                 <h4 className="mb-2">First Meet</h4>
                 <p className="text-uppercase mb-2">03 May 2011</p>
                 <p className="m-0">
-                  We were classmates but never talked with each other. But our
-                  parents are friends and we started our English tuition
-                  together, don't know that the tuition journey will last
-                  forever 😉
+                  We shared the same classroom but never spoke. However, our
+                  parents' friendship brought us together for English tuition.
+                  Who would've guessed this tuition journey would become an
+                  everlasting connection? 😉📚✨
                 </p>
               </div>
             </div>
@@ -48,9 +48,10 @@ const Story = () => {
                 <h4 className="mb-2">First Date</h4>
                 <p className="text-uppercase mb-2">04 Sep 2011</p>
                 <p className="m-0">
-                  We are in a "Long Distance Relationship" from the beginning of
-                  our love story. Whenever we meet after a long time, that time
-                  is very special for us with lots of memories.
+                  💞 Our love story has been defined by a "Long Distance
+                  Relationship" since the very start. Every reunion after a
+                  prolonged separation is incredibly precious, filled with a
+                  plethora of cherished memories. 🌟
                 </p>
               </div>
             </div>
@@ -77,8 +78,10 @@ const Story = () => {
                 <h4 className="mb-2">Proposal</h4>
                 <p className="text-uppercase mb-2">04 Sep 2011</p>
                 <p className="m-0">
-                  He was innocent and she was cute, and they fell in love. Their
-                  love grew over time, and it added colour to their lives.
+                  In her innocence and his charm, a beautiful story began. As
+                  our love blossomed, it painted vibrant hues into the canvas of
+                  our lives. Will you join me in this ever-evolving journey of
+                  love and color? 🌈💍✨
                 </p>
               </div>
             </div>
@@ -89,11 +92,11 @@ const Story = () => {
                 <h4 className="mb-2">Engagement</h4>
                 <p className="text-uppercase mb-2">04 Dec 2022</p>
                 <p className="m-0">
-                  Our love is a dream come true. Wearing your ring on my finger
-                  is the most magical feeling in the world. This day made us
-                  realise that " yes we did it". Love within us is growing with
-                  glowing stars. Love is not just a word but love gave us
-                  everything.
+                  Our love is the realization of a dream. Slipping your ring
+                  onto my finger brings the most enchanting sensation
+                  imaginable. Today, it dawned on us: "Yes, we've made it." Love
+                  within us expands like radiant stars. Love isn't merely a
+                  word; it's the source of everything we cherish. 💫💖🌟
                 </p>
               </div>
             </div>

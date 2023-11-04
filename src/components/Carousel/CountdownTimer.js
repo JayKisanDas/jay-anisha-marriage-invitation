@@ -51,8 +51,8 @@ const CountdownTimer = () => {
     <div className={`${!isCelebrating ? "countdown" : ""}`}>
       {!isCelebrating && (
         <div>
-          <FontAwesomeIcon icon={faClock} />
-          &nbsp; {countdown}
+          {/* <FontAwesomeIcon icon={faClock} /> &nbsp; */}
+          🕝 {countdown}
         </div>
       )}
       {isCelebrating && (

@@ -71,13 +71,18 @@ const Rsvp = () => {
   const sideOptions = [
     {
       id: 1,
-      label: "Bride's Guest",
-      value: "bride",
+      label: "🤵🏻Groom's Guest",
+      value: "groom",
     },
     {
       id: 2,
-      label: "Groom's Guest",
-      value: "groom",
+      label: "👰🏻Bride's Guest",
+      value: "bride",
+    },
+    {
+      id: 3,
+      label: "🤵🏻👰🏻Guest From Both Sides",
+      value: "both",
     },
   ];
 
@@ -146,7 +151,7 @@ const Rsvp = () => {
           >
             RSVP
           </h6>
-          <h1 className="font-secondary display-4">Join Our Party</h1>
+          <h1 className="font-secondary display-4">💃🏻Join Our Party🎉</h1>
           <i className="far fa-heart text-dark"></i>
         </div>
         <div className="row justify-content-center">
