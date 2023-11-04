@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import moment from "moment";
 import "moment/locale/en-au"; // CHANGE THE LOCALE ACCORDING TO YOUR PREFERENCE
 import "react-moment";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClock } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faClock } from "@fortawesome/free-solid-svg-icons";
 
 import gif from "../../assets/images/giphy.gif";
 import "./CountdownTimer.css";
