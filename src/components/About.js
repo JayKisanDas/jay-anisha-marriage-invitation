@@ -12,7 +12,7 @@ const About = () => {
           >
             About
           </h6>
-          <h1 className="font-secondary display-4">🤵🏻Groom & Bride👰🏻</h1>
+          <h1 className="font-secondary display-4">🤵🏻 Groom & Bride 👰🏻</h1>
           <i className="far fa-heart text-dark"></i>
         </div>
         <div className="row m-0 mb-4 mb-md-0 pb-2 pb-md-0">

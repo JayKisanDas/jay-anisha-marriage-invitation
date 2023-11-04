@@ -42,7 +42,7 @@ const Event = () => {
           >
             Event
           </h6>
-          <h1 className="font-secondary display-4">💍Our Wedding Event 🍽️</h1>
+          <h1 className="font-secondary display-4">💍 Our Wedding Event 🍽️</h1>
           <i className="far fa-heart text-dark"></i>
         </div>
         <div className="row justify-content-center">

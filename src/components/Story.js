@@ -16,7 +16,7 @@ const Story = () => {
           >
             Story
           </h6>
-          <h1 className="font-secondary display-4">Our Love Story🤵🏻💖👰🏻</h1>
+          <h1 className="font-secondary display-4">🤵🏻 Our ❤️ Story 👰🏻</h1>
           <i className="far fa-heart text-dark"></i>
         </div>
         <div className="container timeline position-relative p-0">

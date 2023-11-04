@@ -151,7 +151,7 @@ const Rsvp = () => {
           >
             RSVP
           </h6>
-          <h1 className="font-secondary display-4">💃🏻Join Our Party 🎉</h1>
+          <h1 className="font-secondary display-4">💃🏻 Join Our Party 🎉</h1>
           <i className="far fa-heart text-dark"></i>
         </div>
         <div className="row justify-content-center">

@@ -106,9 +106,7 @@ const FamilyList = () => {
           >
             Friends & Family
           </h6>
-          <h1 className="font-secondary display-4">
-            👨🏻‍👩🏻‍👦🏻‍🧒🏻 Groom's & Bride's Family 👨🏻‍👩🏻‍👧🏻‍👧🏻
-          </h1>
+          <h1 className="font-secondary display-4">Groom's & Bride's Family</h1>
           <i className="far fa-heart text-dark"></i>
         </div>
         <div className="row">
